@@ -1,0 +1,24 @@
+﻿References,Symbol,Value,Manufacturer,MPN,Package,Datasheet
+U1,U_STM32F103C8T6,72MHz,STMicroelectronics,STM32F103C8T6,LQFP-48 (7x7mm),https://www.st.com/resource/en/datasheet/stm32f103c8.pdf
+U2,U_MP2307DN-LF-Z,340kHz,Monolithic Power Systems,MP2307DN-LF-Z,SOIC-8-EP,https://www.monolithicpower.com/en/mp2307.html
+U3,U_BME280,BME280,Bosch,BME280,LGA-8 (2.5x2.5mm),https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme280-ds002.pdf
+J1,J_USB-C_TYPE-C-31-M-12,TYPE-C-31-M-12,Korean Hroparts Elec,TYPE-C-31-M-12,SMD top mount,https://datasheet.lcsc.com/lcsc/1903211732_Korean-Hroparts-Elec-TYPE-C-31-M-12_C165948.pdf
+J2,J_SM04B-SRSS-TB,SM04B-SRSS-TB,JST,SM04B-SRSS-TB,JST SH 1x4 1.0mm SMT,https://www.jst-mfg.com/product/pdf/eng/eSH.pdf
+J3,J_Header_1x04_2.54mm_THT,TSW-104-07-G-S,Samtec,TSW-104-07-G-S,1x4 P2.54 THT,https://suddendocs.samtec.com/prints/tsw-xxx-xx-x-x-xx-xxx-footprint.pdf
+J4,J_Header_1x03_2.54mm_THT,TSW-103-07-G-S,Samtec,TSW-103-07-G-S,1x3 P2.54 THT,https://suddendocs.samtec.com/prints/tsw-xxx-xx-x-x-xx-xxx-footprint.pdf
+X1,Y_8MHz_20pF_3225,8MHz,ECS Inc.,ECS-80-20-33-JEN-TR3,3225 4-pad,https://ecsxtal.com/store/pdf/ecx-32.pdf
+L1,L_10uH_20%_2.5A_XGL5050,10uH,Coilcraft,XGL5050-103MEC,5.28x5.48x5.10mm max height,https://www.coilcraft.com/getmedia/348b2df6-54b3-4579-8737-e8367b6fa367/xgl5050.pdf
+D1,D_Schottky_40V_3A_SMA,B340A-13-F,Diodes Incorporated,B340A-13-F,SMA DO-214AC,https://www.diodes.com/part/view/B340A
+LED1,D_LED_Green_0603,APT1608SGC,Kingbright,APT1608SGC,0603 (1608 Metric),https://www.kingbrightusa.com/images/catalog/spec/APT1608SGC.pdf
+"LED2,LED3",D_LED_Red_0603,APT1608SURCK,Kingbright,APT1608SURCK,0603 (1608 Metric),https://www.kingbrightusa.com/images/catalog/spec/apt1608surck.pdf
+"SW1,SW2",SW_SPST_3x4x2mm,HX 3x4x2-2P-2.5N,Hanxia,HX 3x4x2-2P-2.5N,3x4x2mm,https://atta.szlcsc.com/upload/public/pdf/source/20250707/B47B221526B87D575FBEDE6D3B809220.pdf
+"C1,C2",C_10uF_10%_25V_0805,10uF,KEMET,C0805C106K3PACTU,0805,https://search.kemet.com/component-documentation/download/specsheet/C0805C106K3PACTU
+C3,C_10nF_5%_50V_0603,10nF,KEMET,C0603X103J5RECAUTO,0603,https://search.kemet.com/component-documentation/download/specsheet/C0603X103J5RECAUTO
+C4-C8,C_100nF_10%_16V_0603,100nF,KEMET,C0603C104K4RACTU,0603,https://search.kemet.com/component-documentation/download/specsheet/C0603C104K4RACTU
+"C9,C10",C_22pF_2%_50V_0603,22pF,Yageo,CC0603GRNPO9BN220,0603,https://www.yageogroup.com/component-documentation/download/specsheet/CC0603GRNPO9BN220
+"R1,R2",R_5k1_1%_1/10W_0603,5.1K,Yageo,RC0603FR-075K1L,0603 (1608 Metric),https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf
+"R3,R4",R_4k7_1%_1/10W_0603,4.7K,Yageo,RC0603FR-074K7L,0603 (1608 Metric),https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf
+R5,R_82k_1%_1/10W_0603,82K,Yageo,RC0603FR-0782KL,0603 (1608 Metric),https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf
+R6,R_33k_1%_1/10W_0603,33K,Yageo,RC0603FR-0733KL,0603 (1608 Metric),https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf
+R7-R9,R_1k_5%_1/10W_0603,1K,Yageo,RC0603JR-071KL,0603 (1608 Metric),https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf
+R10,R_10k_1%_1/10W_0603,10K,Yageo,RC0603FR-0710KL,0603 (1608 Metric),https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf

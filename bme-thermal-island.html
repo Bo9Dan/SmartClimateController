@@ -1,0 +1,50 @@
+<div id="bme-island">
+  <div class="viz-controls"><button class="btn" id="bme-top" aria-pressed="true">Top: датчик і доріжки</button><button class="btn" id="bme-bottom" aria-pressed="false">Bottom: земля</button></div>
+  <svg role="img" aria-label="Теплоізольований язичок із BME280 біля краю плати, два Г-подібні прорізи та вузька перемичка з чотирма доріжками"></svg>
+  <div class="viz-row text-small"><span>Прорізи — наскрізні</span><span>Перемичка — матеріал плати</span><span>Ескіз без масштабу</span></div>
+</div>
+<style>
+#bme-island{display:grid;gap:12px;color:var(--foreground)}
+#bme-island svg{width:100%;display:block}
+#bme-island text{fill:var(--foreground);font-size:var(--font-size-base);font-weight:400}
+#bme-island .board{fill:color-mix(in srgb,var(--green) 9%,var(--background));stroke:var(--foreground);stroke-width:1.2}
+#bme-island .component{fill:var(--background);stroke:var(--foreground);stroke-width:1}
+#bme-island .copper{fill:color-mix(in srgb,var(--blue) 20%,var(--background));stroke:none}
+#bme-island .lead{stroke:var(--muted-foreground);fill:none;stroke-width:1}
+#bme-island .trace{stroke:var(--orange);fill:none;stroke-width:2}
+</style>
+<script>
+(()=>{
+const root=document.getElementById('bme-island'),svg=root.querySelector('svg'),ns='http://www.w3.org/2000/svg';let bottom=false;
+function el(t,a){const n=document.createElementNS(ns,t);Object.entries(a).forEach(([k,v])=>n.setAttribute(k,v));svg.append(n);return n;}
+function label(x,y,s){const n=el('text',{x,y,'text-anchor':'middle','dominant-baseline':'middle'});n.textContent=s;return n;}
+function draw(){const w=root.clientWidth,h=490;svg.setAttribute('viewBox',`0 0 ${w} ${h}`);svg.style.height=h+'px';svg.replaceChildren();
+const l=20,r=w-20,c=w/2,a=c-w*.19,b=c+w*.19,neck=w*.065;
+label(c,18,'Зовнішнє повітря');
+el('path',{d:`M${c-22} 32V57 M${c-27} 51L${c-22} 57L${c-17} 51 M${c+22} 32V57 M${c+17} 51L${c+22} 57L${c+27} 51`,class:'lead'});
+// Two slots open from the upper board edge; inward turns leave a central neck.
+const d=`M${l} 76H${a-6}V254Q${a-6} 264 ${a+4} 264H${c-neck}V250H${a+8}V76H${b-8}V250H${c+neck}V264H${b-4}Q${b+6} 264 ${b+6} 254V76H${r}V437H${l}Z`;
+el('path',{d,class:'board'});
+if(bottom){
+el('path',{d:`M${l+10} 288H${r-10}V427H${l+10}Z`,class:'copper'});
+el('rect',{x:a+18,y:96,width:b-a-36,height:135,rx:2,class:'copper'});
+el('path',{d:`M${c} 216V312`,class:'trace'});
+label(c,153,'Локальна GND');label(c,185,'датчика');label(c,349,'Основний полігон GND');
+label(c,383,'Без заливки на перемичці');
+}else{
+el('rect',{x:c-39,y:124,width:78,height:48,rx:2,class:'component'});label(c,148,'BME280');
+for(let j=0;j<4;j++){const x=c-12+j*8;el('path',{d:`M${x} 173V312`,class:'trace'});el('rect',{x:c-47+j*25,y:169,width:19,height:5,fill:'var(--foreground)'});}
+el('rect',{x:c-35,y:194,width:22,height:12,class:'component'});el('rect',{x:c+13,y:194,width:22,height:12,class:'component'});
+label(c,223,'C розв’язки');label(c,335,'3,3 В · GND · SDA · SCL');
+el('rect',{x:l+18,y:370,width:82,height:38,class:'component'});label(l+59,389,'STM32');
+el('rect',{x:r-105,y:370,width:87,height:38,class:'component'});label(r-61,389,'DC/DC');
+}
+label(l+44,110,'Проріз');el('path',{d:`M${l+44} 126L${a} 187`,class:'lead'});
+label(r-45,110,'Проріз');el('path',{d:`M${r-45} 126L${b} 187`,class:'lead'});
+label(l+61,300,'Перемичка');el('path',{d:`M${l+98} 295L${c-neck+2} 270`,class:'lead'});
+label(c,465,'Основна частина плати');
+}
+function set(v){bottom=v;root.querySelector('#bme-top').setAttribute('aria-pressed',!v);root.querySelector('#bme-bottom').setAttribute('aria-pressed',v);draw();}
+root.querySelector('#bme-top').onclick=()=>set(false);root.querySelector('#bme-bottom').onclick=()=>set(true);new ResizeObserver(draw).observe(root);
+})();
+</script>

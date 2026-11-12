@@ -1,0 +1,120 @@
+{
+  "added_components": [
+    "ECS-80-12-33-JGN-TR3",
+    "CDRH6D28NP-100NC",
+    "TSW-104-07-G-S"
+  ],
+  "schematic_component_count": 19,
+  "footprint_count": 22,
+  "footprints": [
+    {
+      "footprint": "XTAL_ECX32_3225_4P",
+      "description": "ECS ECX-32, 3.2x2.5x0.8mm; 4 pads; 1/3 crystal, 2/4 GND; manufacturer suggested land",
+      "height_mm": 0.8,
+      "pads": [
+        {
+          "number": 1,
+          "x_mm": -1.15,
+          "y_mm": -0.9,
+          "width_mm": 1.3,
+          "height_mm": 1.1,
+          "hole_mm": 0
+        },
+        {
+          "number": 2,
+          "x_mm": 1.15,
+          "y_mm": -0.9,
+          "width_mm": 1.3,
+          "height_mm": 1.1,
+          "hole_mm": 0
+        },
+        {
+          "number": 3,
+          "x_mm": 1.15,
+          "y_mm": 0.9,
+          "width_mm": 1.3,
+          "height_mm": 1.1,
+          "hole_mm": 0
+        },
+        {
+          "number": 4,
+          "x_mm": -1.15,
+          "y_mm": 0.9,
+          "width_mm": 1.3,
+          "height_mm": 1.1,
+          "hole_mm": 0
+        }
+      ]
+    },
+    {
+      "footprint": "L_CDRH6D28_7x7mm",
+      "description": "Sumida CDRH6D28, body 7x7x3mm maximum; 2.65x7.3mm lands, 2mm gap",
+      "height_mm": 3,
+      "pads": [
+        {
+          "number": 1,
+          "x_mm": -2.325,
+          "y_mm": 0,
+          "width_mm": 2.65,
+          "height_mm": 7.3,
+          "hole_mm": 0
+        },
+        {
+          "number": 2,
+          "x_mm": 2.325,
+          "y_mm": 0,
+          "width_mm": 2.65,
+          "height_mm": 7.3,
+          "hole_mm": 0
+        }
+      ]
+    },
+    {
+      "footprint": "HDR_1x04_P2.54_THT",
+      "description": "Samtec TSW 1x4 vertical header, 2.54mm pitch; 1.02mm plated holes, 1.8mm lands; square pad 1",
+      "height_mm": 8.38,
+      "pads": [
+        {
+          "number": 1,
+          "x_mm": 0.0,
+          "y_mm": 0,
+          "width_mm": 1.8,
+          "height_mm": 1.8,
+          "hole_mm": 1.02
+        },
+        {
+          "number": 2,
+          "x_mm": 2.54,
+          "y_mm": 0,
+          "width_mm": 1.8,
+          "height_mm": 1.8,
+          "hole_mm": 1.02
+        },
+        {
+          "number": 3,
+          "x_mm": 5.08,
+          "y_mm": 0,
+          "width_mm": 1.8,
+          "height_mm": 1.8,
+          "hole_mm": 1.02
+        },
+        {
+          "number": 4,
+          "x_mm": 7.62,
+          "y_mm": 0,
+          "width_mm": 1.8,
+          "height_mm": 1.8,
+          "hole_mm": 1.02
+        }
+      ]
+    }
+  ],
+  "backup": "C:\\Users\\Public\\Documents\\Altium\\PCB_Smart_Climate_Monitor\\Additional_Components_Backup_2026-11-03",
+  "notes": [
+    "FA-238 is not an 8MHz crystal; ECS ECX-32 selected instead.",
+    "CDRH6D28 is 7x7x3mm max, not a generic 6x6 package.",
+    "These three new footprints have 2D geometry and courtyard; no supplier 3D model is claimed.",
+    "Symbol pin numbers and footprint pads match; existing symbol and footprint streams unchanged."
+  ],
+  "verification": "Opened all three new symbols in Altium; each displayed the correct footprint preview. Saved both libraries natively. Verified every existing and new pad geometry, track geometry/layer, all existing embedded model blobs, new symbol pins and parameters after saving."
+}

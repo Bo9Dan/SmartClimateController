@@ -1,0 +1,51 @@
+<div id="pcb-concept">
+  <div class="viz-controls"><span>USB-C на краю:</span><button class="btn" id="usb-center" aria-pressed="true">По центру</button><button class="btn" id="usb-left" aria-pressed="false">Ліворуч</button></div>
+  <div class="text-small">Вигляд зверху · всі компоненти на Top · концепція, без масштабу</div>
+  <svg role="img" aria-label="Запропоноване розміщення всіх 38 компонентів на верхньому боці плати"></svg>
+  <div class="text-small" id="pcb-caption" aria-live="polite">USB-C по центру верхнього краю. Силова група ліворуч, датчик — у протилежному куті.</div>
+</div>
+<style>
+#pcb-concept{display:grid;gap:12px;color:var(--foreground)}
+#pcb-concept svg{width:100%;display:block} #pcb-concept svg text{fill:var(--foreground);font-family:ui-monospace,monospace;font-size:var(--font-size-base)}
+#pcb-concept .outline{fill:var(--background);stroke:var(--foreground);stroke-width:1.5}
+#pcb-concept .zone{fill:color-mix(in srgb,var(--blue) 6%,var(--background));stroke:var(--border)}
+#pcb-concept .part{fill:var(--background);stroke:color-mix(in srgb,var(--foreground) 65%,var(--background));stroke-width:1}
+#pcb-concept .pad{fill:color-mix(in srgb,var(--foreground) 35%,var(--background))}
+#pcb-concept .power{fill:color-mix(in srgb,var(--orange) 9%,var(--background));stroke:var(--border)}
+</style>
+<script>
+(()=>{
+const root=document.getElementById('pcb-concept'),svg=root.querySelector('svg'),ns='http://www.w3.org/2000/svg';let centered=true;
+function el(tag,attrs,parent=svg){const n=document.createElementNS(ns,tag);Object.entries(attrs).forEach(([k,v])=>n.setAttribute(k,v));parent.append(n);return n;}
+function text(x,y,s,parent=svg){const n=el('text',{x,y,'text-anchor':'middle','dominant-baseline':'middle'},parent);n.textContent=s;return n;}
+function draw(){const w=root.clientWidth, h=w*1.03;svg.setAttribute('viewBox',`0 0 ${w} ${h}`);svg.style.height=h+'px';svg.replaceChildren();const X=v=>v*w/700,Y=v=>v*h/720;
+el('rect',{x:X(12),y:Y(35),width:X(676),height:Y(662),rx:8,class:'outline'});
+function zone(x,y,ww,hh,label,cl='zone'){el('rect',{x:X(x),y:Y(y),width:X(ww),height:Y(hh),rx:5,class:cl});text(X(x+ww/2),Y(y+18),label);}
+zone(28,150,270,300,'ЖИВЛЕННЯ','power');zone(321,215,345,265,'КОНТРОЛЕР');zone(438,535,228,145,'ДАТЧИК');
+function part(x,y,ww,hh,label,kind='small'){
+const g=el('g',{'data-tooltip':label});const px=X(x),py=Y(y),pw=X(ww),ph=Y(hh);el('rect',{x:px,y:py,width:pw,height:ph,rx:kind==='usb'?5:2,class:'part'},g);
+if(kind==='ic'){for(let i=0;i<4;i++){el('rect',{x:px-4,y:py+ph*(i+.3)/4,width:4,height:ph*.11,class:'pad'},g);el('rect',{x:px+pw,y:py+ph*(i+.3)/4,width:4,height:ph*.11,class:'pad'},g);}}
+else if(kind==='small'){el('rect',{x:px,y:py,width:pw*.16,height:ph,class:'pad'},g);el('rect',{x:px+pw*.84,y:py,width:pw*.16,height:ph,class:'pad'},g);}
+text(px+pw/2,py+ph/2,label,g);
+}
+const ux=centered?306:62;part(ux,25,88,64,'J1','usb');text(X(ux+44),Y(12),'USB-C');
+part(ux-35,105,65,28,'R2');part(ux+45,105,65,28,'R3');
+part(45,205,65,30,'C8');part(130,211,75,62,'U1','ic');part(132,177,65,26,'C9');
+part(220,225,60,36,'D2');part(157,294,62,55,'L1','ic');part(222,304,60,27,'C10');part(222,344,60,27,'C11');
+part(45,292,62,27,'C12');part(45,334,62,27,'R12');part(122,391,62,27,'R5');part(204,391,62,27,'R7');
+part(464,305,94,85,'U2','ic');part(371,294,62,35,'Y1','ic');part(347,347,62,27,'C6');part(347,252,62,27,'C7');
+part(474,263,62,27,'C4');part(572,310,62,27,'C3');part(474,408,62,27,'C2');part(396,401,62,27,'C5');
+part(578,382,62,27,'R6');part(573,260,62,27,'R4');
+part(42,515,92,43,'J3','connector');part(42,582,92,40,'SW1','connector');part(153,516,62,27,'R1');part(153,562,62,27,'C1');
+part(317,544,90,42,'J4','connector');part(474,490,95,30,'J2','connector');
+part(480,580,62,27,'R8');part(583,580,62,27,'R9');part(524,629,65,35,'U3','ic');
+part(222,617,62,27,'R10');part(308,617,62,27,'R11');part(222,659,62,27,'D1');part(308,659,62,27,'D3');
+part(42,652,92,32,'SW2','connector');
+text(X(88),Y(637),'RESET');text(X(318),Y(597),'PWR / STATUS');
+}
+root.querySelector('#usb-center').onclick=()=>set(true);root.querySelector('#usb-left').onclick=()=>set(false);
+function set(v){centered=v;root.querySelector('#usb-center').setAttribute('aria-pressed',v);root.querySelector('#usb-left').setAttribute('aria-pressed',!v);root.querySelector('#pcb-caption').textContent=v?'USB-C по центру верхнього краю. Силова група ліворуч, датчик — у протилежному куті.':'USB-C ліворуч: коротший шлях 5 В до перетворювача, кабель зміщений від центра.';draw();}
+new ResizeObserver(draw).observe(root);
+})();
+</script>
+

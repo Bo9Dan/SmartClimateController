@@ -1,0 +1,90 @@
+{
+  "Y_8MHz_20pF_3225": {
+    "MF": "ECS Inc.",
+    "MP": "ECS-80-20-33-JEN-TR3",
+    "Datasheet": "https://ecsxtal.com/store/pdf/ecx-32.pdf",
+    "Load Capacitance": "20pF",
+    "Frequency Tolerance": "+/-20ppm",
+    "Frequency Stability": "+/-50ppm"
+  },
+  "L_10uH_20%_2A_6x6mm": {
+    "MF": "Coilcraft",
+    "MP": "XGL5050-103MEC",
+    "Package": "5.28x5.48x5.10mm max height",
+    "Saturation Current": "2.5A at 10% drop; 3.7A at 20% drop",
+    "DC Resistance": "33.6mOhm max",
+    "Rated Current": "4.6A at 20C rise",
+    "Datasheet": "https://www.coilcraft.com/getmedia/348b2df6-54b3-4579-8737-e8367b6fa367/xgl5050.pdf"
+  },
+  "SW_SPST_3x4x2mm": {
+    "MF": "Hanxia",
+    "MP": "HX 3x4x2-2P-2.5N",
+    "LCSC": "C36498961",
+    "Voltage": "12V",
+    "Current": "50mA",
+    "Operating Force": "2.5N",
+    "Datasheet": "https://atta.szlcsc.com/upload/public/pdf/source/20250707/B47B221526B87D575FBEDE6D3B809220.pdf"
+  },
+  "D_Schottky_40V_3A_SMA": {
+    "MF": "Diodes Incorporated",
+    "MP": "B340A-13-F",
+    "Datasheet": "https://www.diodes.com/part/view/B340A"
+  },
+  "D_LED_Green_0603": {
+    "MF": "Kingbright",
+    "MP": "APT1608SGC",
+    "Datasheet": "https://www.kingbrightusa.com/images/catalog/spec/APT1608SGC.pdf"
+  },
+  "D_LED_Red_0603": {
+    "MF": "Kingbright",
+    "MP": "APT1608SURCK",
+    "Datasheet": "https://www.kingbrightusa.com/images/catalog/spec/apt1608surck.pdf"
+  },
+  "C_10uF_10%_25V_0805": {
+    "MF": "KEMET",
+    "MP": "C0805C106K3PACTU",
+    "Datasheet": "https://search.kemet.com/component-documentation/download/specsheet/C0805C106K3PACTU"
+  },
+  "C_10nF_5%_50V_0603": {
+    "MF": "KEMET",
+    "MP": "C0603X103J5RECAUTO"
+  },
+  "C_100nF_10%_16V_0603": {
+    "MF": "KEMET",
+    "MP": "C0603C104K4RACTU"
+  },
+  "C_22pF_2%_50V_0603": {
+    "MF": "Yageo",
+    "MP": "CC0603GRNPO9BN220"
+  },
+  "R_5k1_1%_1/10W_0603": {
+    "MF": "Yageo",
+    "MP": "RC0603FR-075K1L",
+    "Datasheet": "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
+  },
+  "R_4k7_1%_1/10W_0603": {
+    "MF": "Yageo",
+    "MP": "RC0603FR-074K7L",
+    "Datasheet": "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
+  },
+  "R_82k_1%_1/10W_0603": {
+    "MF": "Yageo",
+    "MP": "RC0603FR-0782KL",
+    "Datasheet": "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
+  },
+  "R_33k_1%_1/10W_0603": {
+    "MF": "Yageo",
+    "MP": "RC0603FR-0733KL",
+    "Datasheet": "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
+  },
+  "R_1k_5%_1/10W_0603": {
+    "MF": "Yageo",
+    "MP": "RC0603JR-071KL",
+    "Datasheet": "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
+  },
+  "R_10k_1%_1/10W_0603": {
+    "MF": "Yageo",
+    "MP": "RC0603FR-0710KL",
+    "Datasheet": "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
+  }
+}

@@ -1,0 +1,13 @@
+# Local history and temporary files
+History/
+__pycache__/
+*.py[cod]
+*_Backup_*/
+Project Logs for */
+Project Outputs for */
+*.PrjPcbStructure
+*.PrjPcbStructure*
+*.SchDocPreview
+*.PcbDocPreview
+*.Lck
+*.lck

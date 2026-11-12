@@ -1,0 +1,105 @@
+{
+  "updated_footprints": [
+    {
+      "footprint": "RESC1608X50N",
+      "added_3d_bodies": 4,
+      "height_mm": 0.5,
+      "nominal_body_mm": [
+        1.6,
+        0.8,
+        0.5
+      ],
+      "model_kind": "Native Altium extruded solids; simplified dimensional model"
+    },
+    {
+      "footprint": "RESC1608X55N",
+      "added_3d_bodies": 4,
+      "height_mm": 0.55,
+      "nominal_body_mm": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "model_kind": "Native Altium extruded solids; simplified dimensional model"
+    },
+    {
+      "footprint": "RESC1608X55N_82K",
+      "added_3d_bodies": 4,
+      "height_mm": 0.55,
+      "nominal_body_mm": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "model_kind": "Native Altium extruded solids; simplified dimensional model"
+    },
+    {
+      "footprint": "RESC1608X50N_variant17",
+      "added_3d_bodies": 4,
+      "height_mm": 0.5,
+      "nominal_body_mm": [
+        1.6,
+        0.8,
+        0.5
+      ],
+      "model_kind": "Native Altium extruded solids; simplified dimensional model"
+    },
+    {
+      "footprint": "RESC1608X50N_variant18",
+      "added_3d_bodies": 4,
+      "height_mm": 0.5,
+      "nominal_body_mm": [
+        1.6,
+        0.8,
+        0.5
+      ],
+      "model_kind": "Native Altium extruded solids; simplified dimensional model"
+    },
+    {
+      "footprint": "L_CDRH6D28_7x7mm",
+      "added_3d_bodies": 4,
+      "height_mm": 3,
+      "nominal_body_mm": [
+        7,
+        7,
+        3
+      ],
+      "model_kind": "Native Altium extruded solids; simplified dimensional model"
+    },
+    {
+      "footprint": "XTAL_ECX32_3225_4P",
+      "added_3d_bodies": 6,
+      "height_mm": 0.8,
+      "nominal_body_mm": [
+        3.2,
+        2.5,
+        0.8
+      ],
+      "model_kind": "Native Altium extruded solids; simplified dimensional model"
+    },
+    {
+      "footprint": "SW_1571294-1",
+      "added_3d_bodies": 7,
+      "height_mm": 4.3,
+      "nominal_body_mm": [
+        7.6,
+        7.3,
+        4.3
+      ],
+      "model_kind": "Native Altium extruded solids; simplified dimensional model"
+    },
+    {
+      "footprint": "HDR_1x04_P2.54_THT",
+      "added_3d_bodies": 5,
+      "height_mm": 8.38,
+      "nominal_body_mm": [
+        10.16,
+        2.54,
+        8.38
+      ],
+      "model_kind": "Native Altium extruded solids; simplified dimensional model"
+    }
+  ],
+  "backup": "C:\\Users\\Public\\Documents\\Altium\\PCB_Smart_Climate_Monitor\\Bodies_3D_Backup_2026-11-03",
+  "verified": "Only new 3D primitives, footprint heights and primitive counts changed. Original pads, holes, copper, silk and existing models retained."
+}

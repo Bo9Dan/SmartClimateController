@@ -1,0 +1,567 @@
+[
+  {
+    "name": "U_STM32F103C8T6",
+    "parameters": {
+      "Value": "72MHz",
+      "Comment": "U_STM32F103C8T6",
+      "Package": "LQFP-48 (7x7mm)",
+      "BOM References": "U1",
+      "MP": "STM32F103C8T6",
+      "MF": "STMicroelectronics",
+      "Flash": "64KB",
+      "Frequency": "72MHz",
+      "Datasheet": "https://www.st.com/resource/en/datasheet/stm32f103c8.pdf"
+    },
+    "footprint": "QFP50P900X900X160-48N",
+    "pins": [
+      "1",
+      "7",
+      "44",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "37",
+      "38",
+      "2",
+      "3",
+      "4",
+      "9",
+      "24",
+      "36",
+      "48",
+      "18",
+      "19",
+      "20",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "45",
+      "46",
+      "21",
+      "22",
+      "25",
+      "26",
+      "27",
+      "28",
+      "5",
+      "6",
+      "8",
+      "23",
+      "35",
+      "47"
+    ],
+    "missingPads": []
+  },
+  {
+    "name": "U_MP2307DN-LF-Z",
+    "parameters": {
+      "Value": "340kHz",
+      "Comment": "U_MP2307DN-LF-Z",
+      "Package": "SOIC-8-EP",
+      "BOM References": "U2",
+      "MP": "MP2307DN-LF-Z",
+      "MF": "Monolithic Power Systems",
+      "Current": "3A",
+      "Voltage": "23V",
+      "Frequency": "340kHz",
+      "Datasheet": "https://www.monolithicpower.com/en/mp2307.html"
+    },
+    "footprint": "SOIC127P600X170-9N",
+    "pins": [
+      "2",
+      "7",
+      "6",
+      "8",
+      "1",
+      "3",
+      "5",
+      "4",
+      "9"
+    ],
+    "missingPads": []
+  },
+  {
+    "name": "U_BME280",
+    "parameters": {
+      "Value": "BME280",
+      "Comment": "U_BME280",
+      "Package": "LGA-8 (2.5x2.5mm)",
+      "BOM References": "U3",
+      "MP": "BME280",
+      "MF": "Bosch",
+      "Datasheet": "https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme280-ds002.pdf"
+    },
+    "footprint": "PSON65P250X250X100-8N",
+    "pins": [
+      "2",
+      "4",
+      "3",
+      "5",
+      "6",
+      "8",
+      "1",
+      "7"
+    ],
+    "missingPads": []
+  },
+  {
+    "name": "J_USB-C_TYPE-C-31-M-12",
+    "parameters": {
+      "Value": "TYPE-C-31-M-12",
+      "Comment": "J_USB-C_TYPE-C-31-M-12",
+      "Package": "SMD top mount",
+      "BOM References": "J1",
+      "MP": "TYPE-C-31-M-12",
+      "MF": "Korean Hroparts Elec",
+      "LCSC": "C165948",
+      "Datasheet": "https://datasheet.lcsc.com/lcsc/1903211732_Korean-Hroparts-Elec-TYPE-C-31-M-12_C165948.pdf"
+    },
+    "footprint": "HRO_TYPE-C-31-M-12",
+    "pins": [
+      "A5",
+      "A6",
+      "A7",
+      "A8",
+      "A4_B9",
+      "B4_A9",
+      "B8",
+      "B7",
+      "B6",
+      "B5",
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "A1_B12",
+      "B1_A12"
+    ],
+    "missingPads": []
+  },
+  {
+    "name": "J_SM04B-SRSS-TB",
+    "parameters": {
+      "Value": "SM04B-SRSS-TB",
+      "Comment": "J_SM04B-SRSS-TB",
+      "Package": "JST SH 1x4 1.0mm SMT",
+      "BOM References": "J2",
+      "MP": "SM04B-SRSS-TB",
+      "MF": "JST",
+      "Pitch": "1.0mm",
+      "Datasheet": "https://www.jst-mfg.com/product/pdf/eng/eSH.pdf"
+    },
+    "footprint": "CONN_SM04B-SRSS-TB_JST",
+    "pins": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "missingPads": []
+  },
+  {
+    "name": "J_Header_1x04_2.54mm_THT",
+    "parameters": {
+      "Value": "TSW-104-07-G-S",
+      "Comment": "J_Header_1x04_2.54mm_THT",
+      "Package": "1x4 P2.54 THT",
+      "BOM References": "J3",
+      "Pitch": "2.54mm",
+      "MP": "TSW-104-07-G-S",
+      "MF": "Samtec",
+      "Number of Pins": "4",
+      "Datasheet": "https://suddendocs.samtec.com/prints/tsw-xxx-xx-x-x-xx-xxx-footprint.pdf"
+    },
+    "footprint": "HDR_1x04_P2.54_THT",
+    "pins": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "missingPads": []
+  },
+  {
+    "name": "J_Header_1x03_2.54mm_THT",
+    "parameters": {
+      "Value": "TSW-103-07-G-S",
+      "Comment": "J_Header_1x03_2.54mm_THT",
+      "Package": "1x3 P2.54 THT",
+      "BOM References": "J4",
+      "Pitch": "2.54mm",
+      "MP": "TSW-103-07-G-S",
+      "MF": "Samtec",
+      "Number of Pins": "3",
+      "Datasheet": "https://suddendocs.samtec.com/prints/tsw-xxx-xx-x-x-xx-xxx-footprint.pdf"
+    },
+    "footprint": "HDR_1x03_P2.54_THT",
+    "pins": [
+      "1",
+      "2",
+      "3"
+    ],
+    "missingPads": []
+  },
+  {
+    "name": "Y_8MHz_20pF_3225",
+    "parameters": {
+      "Value": "8MHz",
+      "Comment": "Y_8MHz_20pF_3225",
+      "Package": "3225 4-pad",
+      "BOM References": "X1",
+      "Frequency": "8MHz",
+      "Load Capacitance": "20pF",
+      "Frequency Tolerance": "+/-20ppm",
+      "MP": "ECS-80-20-33-JEN-TR3",
+      "MF": "ECS Inc.",
+      "Datasheet": "https://ecsxtal.com/store/pdf/ecx-32.pdf",
+      "Frequency Stability": "+/-50ppm"
+    },
+    "footprint": "XTAL_ECX32_3225_4P",
+    "pins": [
+      "2",
+      "1",
+      "4",
+      "3"
+    ],
+    "missingPads": []
+  },
+  {
+    "name": "L_10uH_20%_2.5A_XGL5050",
+    "parameters": {
+      "Value": "10uH",
+      "Comment": "L_10uH_20%_2.5A_XGL5050",
+      "Package": "5.28x5.48x5.10mm max height",
+      "BOM References": "L1",
+      "Inductance": "10uH",
+      "Tolerance": "20%",
+      "Saturation Current Requirement": ">=2A",
+      "DC Resistance Requirement": "<50mOhm",
+      "MP": "XGL5050-103MEC",
+      "MF": "Coilcraft",
+      "Saturation Current": "2.5A at 10% drop; 3.7A at 20% drop",
+      "DC Resistance": "33.6mOhm max",
+      "Rated Current": "4.6A at 20C rise",
+      "Datasheet": "https://www.coilcraft.com/getmedia/348b2df6-54b3-4579-8737-e8367b6fa367/xgl5050.pdf"
+    },
+    "footprint": "L_XGL5050",
+    "pins": [
+      "1",
+      "2"
+    ],
+    "missingPads": []
+  },
+  {
+    "name": "D_Schottky_40V_3A_SMA",
+    "parameters": {
+      "Value": "B340A-13-F",
+      "Comment": "D_Schottky_40V_3A_SMA",
+      "Package": "SMA DO-214AC",
+      "BOM References": "D1",
+      "MP": "B340A-13-F",
+      "MF": "Diodes Incorporated",
+      "Voltage": "40V",
+      "Current": "3A",
+      "Datasheet": "https://www.diodes.com/part/view/B340A"
+    },
+    "footprint": "D_SMA_DO214AC",
+    "pins": [
+      "2",
+      "1"
+    ],
+    "missingPads": []
+  },
+  {
+    "name": "D_LED_Green_0603",
+    "parameters": {
+      "Value": "APT1608SGC",
+      "Comment": "D_LED_Green_0603",
+      "Package": "0603 (1608 Metric)",
+      "BOM References": "LED1",
+      "MP": "APT1608SGC",
+      "MF": "Kingbright",
+      "Color": "Green",
+      "Datasheet": "https://www.kingbrightusa.com/images/catalog/spec/APT1608SGC.pdf"
+    },
+    "footprint": "LED_APT1608SGC",
+    "pins": [
+      "2",
+      "1"
+    ],
+    "missingPads": []
+  },
+  {
+    "name": "D_LED_Red_0603",
+    "parameters": {
+      "Value": "APT1608SURCK",
+      "Comment": "D_LED_Red_0603",
+      "Package": "0603 (1608 Metric)",
+      "BOM References": "LED2,LED3",
+      "MP": "APT1608SURCK",
+      "MF": "Kingbright",
+      "Color": "Red",
+      "Datasheet": "https://www.kingbrightusa.com/images/catalog/spec/apt1608surck.pdf"
+    },
+    "footprint": "LED_APT1608SGC",
+    "pins": [
+      "2",
+      "1"
+    ],
+    "missingPads": []
+  },
+  {
+    "name": "SW_SPST_3x4x2mm",
+    "parameters": {
+      "Value": "HX 3x4x2-2P-2.5N",
+      "Comment": "SW_SPST_3x4x2mm",
+      "Package": "3x4x2mm",
+      "BOM References": "SW1,SW2",
+      "MP": "HX 3x4x2-2P-2.5N",
+      "MF": "Hanxia",
+      "Configuration": "SPST-NO",
+      "LCSC": "C36498961",
+      "Voltage": "12V",
+      "Current": "50mA",
+      "Operating Force": "2.5N",
+      "Datasheet": "https://atta.szlcsc.com/upload/public/pdf/source/20250707/B47B221526B87D575FBEDE6D3B809220.pdf"
+    },
+    "footprint": "SW_HX_3x4x2_2P",
+    "pins": [
+      "2",
+      "1"
+    ],
+    "missingPads": []
+  },
+  {
+    "name": "C_10uF_10%_25V_0805",
+    "parameters": {
+      "Value": "10uF",
+      "Comment": "C_10uF_10%_25V_0805",
+      "Package": "0805",
+      "BOM References": "C1,C2",
+      "Capacitance": "10uF",
+      "Tolerance": "10%",
+      "Voltage": "25V",
+      "Dielectric": "X5R",
+      "MP": "C0805C106K3PACTU",
+      "MF": "KEMET",
+      "Datasheet": "https://search.kemet.com/component-documentation/download/specsheet/C0805C106K3PACTU"
+    },
+    "footprint": "CAPC2012X88N",
+    "pins": [
+      "1",
+      "2"
+    ],
+    "missingPads": []
+  },
+  {
+    "name": "C_10nF_5%_50V_0603",
+    "parameters": {
+      "Value": "10nF",
+      "Comment": "C_10nF_5%_50V_0603",
+      "Package": "0603",
+      "BOM References": "C3",
+      "Capacitance": "10nF",
+      "Tolerance": "5%",
+      "Voltage": "50V",
+      "Dielectric": "X7R",
+      "MP": "C0603X103J5RECAUTO",
+      "MF": "KEMET",
+      "Datasheet": "https://search.kemet.com/component-documentation/download/specsheet/C0603X103J5RECAUTO"
+    },
+    "footprint": "CAPC1608X95N",
+    "pins": [
+      "1",
+      "2"
+    ],
+    "missingPads": []
+  },
+  {
+    "name": "C_100nF_10%_16V_0603",
+    "parameters": {
+      "Value": "100nF",
+      "Comment": "C_100nF_10%_16V_0603",
+      "Package": "0603",
+      "BOM References": "C4-C8",
+      "Capacitance": "100nF",
+      "Tolerance": "10%",
+      "Voltage": "16V",
+      "Dielectric": "X7R",
+      "MP": "C0603C104K4RACTU",
+      "MF": "KEMET",
+      "Datasheet": "https://search.kemet.com/component-documentation/download/specsheet/C0603C104K4RACTU"
+    },
+    "footprint": "CAPC1608X95N",
+    "pins": [
+      "1",
+      "2"
+    ],
+    "missingPads": []
+  },
+  {
+    "name": "C_22pF_2%_50V_0603",
+    "parameters": {
+      "Value": "22pF",
+      "Comment": "C_22pF_2%_50V_0603",
+      "Package": "0603",
+      "BOM References": "C9,C10",
+      "Capacitance": "22pF",
+      "Tolerance": "2%",
+      "Voltage": "50V",
+      "Dielectric": "C0G",
+      "MP": "CC0603GRNPO9BN220",
+      "MF": "Yageo",
+      "Datasheet": "https://www.yageogroup.com/component-documentation/download/specsheet/CC0603GRNPO9BN220"
+    },
+    "footprint": "CAPC1608X90",
+    "pins": [
+      "1",
+      "2"
+    ],
+    "missingPads": []
+  },
+  {
+    "name": "R_5k1_1%_1/10W_0603",
+    "parameters": {
+      "Value": "5.1K",
+      "Comment": "RES 5.1K OHM 1% 1/10W 0603",
+      "Package": "0603 (1608 Metric)",
+      "BOM References": "R1,R2",
+      "Resistance": "5k1",
+      "Tolerance": "1%",
+      "Power": "0.1W",
+      "Technology": "Thick Film",
+      "MP": "RC0603FR-075K1L",
+      "MF": "Yageo",
+      "Datasheet": "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
+    },
+    "footprint": "RESC1608X55N_10K",
+    "pins": [
+      "1",
+      "2"
+    ],
+    "missingPads": []
+  },
+  {
+    "name": "R_4k7_1%_1/10W_0603",
+    "parameters": {
+      "Value": "4.7K",
+      "Comment": "RES 4.7K OHM 1% 1/10W 0603",
+      "Package": "0603 (1608 Metric)",
+      "BOM References": "R3,R4",
+      "Resistance": "4k7",
+      "Tolerance": "1%",
+      "Power": "0.1W",
+      "Technology": "Thick Film",
+      "MP": "RC0603FR-074K7L",
+      "MF": "Yageo",
+      "Datasheet": "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
+    },
+    "footprint": "RESC1608X55N_10K",
+    "pins": [
+      "1",
+      "2"
+    ],
+    "missingPads": []
+  },
+  {
+    "name": "R_82k_1%_1/10W_0603",
+    "parameters": {
+      "Value": "82K",
+      "Comment": "RES 82K OHM 1% 1/10W 0603",
+      "Package": "0603 (1608 Metric)",
+      "BOM References": "R5",
+      "Resistance": "82k",
+      "Tolerance": "1%",
+      "Power": "0.1W",
+      "Technology": "Thick Film",
+      "MP": "RC0603FR-0782KL",
+      "MF": "Yageo",
+      "Datasheet": "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
+    },
+    "footprint": "RESC1608X55N_10K",
+    "pins": [
+      "1",
+      "2"
+    ],
+    "missingPads": []
+  },
+  {
+    "name": "R_33k_1%_1/10W_0603",
+    "parameters": {
+      "Value": "33K",
+      "Comment": "RES 33K OHM 1% 1/10W 0603",
+      "Package": "0603 (1608 Metric)",
+      "BOM References": "R6",
+      "Resistance": "33k",
+      "Tolerance": "1%",
+      "Power": "0.1W",
+      "Technology": "Thick Film",
+      "MP": "RC0603FR-0733KL",
+      "MF": "Yageo",
+      "Datasheet": "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
+    },
+    "footprint": "RESC1608X55N_10K",
+    "pins": [
+      "1",
+      "2"
+    ],
+    "missingPads": []
+  },
+  {
+    "name": "R_1k_5%_1/10W_0603",
+    "parameters": {
+      "Value": "1K",
+      "Comment": "RES 1K OHM 5% 1/10W 0603",
+      "Package": "0603 (1608 Metric)",
+      "BOM References": "R7-R9",
+      "Resistance": "1k",
+      "Tolerance": "5%",
+      "Power": "0.1W",
+      "Technology": "Thick Film",
+      "MP": "RC0603JR-071KL",
+      "MF": "Yageo",
+      "Datasheet": "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
+    },
+    "footprint": "RESC1608X55N_10K",
+    "pins": [
+      "1",
+      "2"
+    ],
+    "missingPads": []
+  },
+  {
+    "name": "R_10k_1%_1/10W_0603",
+    "parameters": {
+      "Value": "10K",
+      "Comment": "RES 10K OHM 1% 1/10W 0603",
+      "Package": "0603 (1608 Metric)",
+      "BOM References": "R10",
+      "Resistance": "10k",
+      "Tolerance": "1%",
+      "Power": "0.1W",
+      "Technology": "Thick Film",
+      "MP": "RC0603FR-0710KL",
+      "MF": "Yageo",
+      "Datasheet": "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
+    },
+    "footprint": "RESC1608X55N_10K",
+    "pins": [
+      "1",
+      "2"
+    ],
+    "missingPads": []
+  }
+]

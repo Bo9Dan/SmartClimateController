@@ -1,0 +1,142 @@
+{
+  "symbols": 16,
+  "footprints": 19,
+  "embedded_models": 13,
+  "components": [
+    {
+      "component": "8-1879460-3",
+      "footprints": [
+        "RESC1608X50N"
+      ],
+      "source": "SnapEDA_Extracted\\8-1879460-3.schlib"
+    },
+    {
+      "component": "AC0603FR-104K7L",
+      "footprints": [
+        "RESC1608X55N_4K7"
+      ],
+      "source": "SnapEDA_Extracted\\AC0603FR-104K7L.schlib"
+    },
+    {
+      "component": "AC0603FR-135K1L",
+      "footprints": [
+        "RESC1608X55N_5K1"
+      ],
+      "source": "SnapEDA_Extracted\\AC0603FR-135K1L.schlib"
+    },
+    {
+      "component": "APT1608SGC",
+      "footprints": [
+        "LED_APT1608SGC"
+      ],
+      "source": "SnapEDA_Extracted\\APT1608SGC.schlib"
+    },
+    {
+      "component": "BME280",
+      "footprints": [
+        "PSON65P250X250X100-8N"
+      ],
+      "source": "SnapEDA_Extracted\\BME280.schlib"
+    },
+    {
+      "component": "C0603X103J5RECAUTO",
+      "footprints": [
+        "CAPC1608X95N"
+      ],
+      "source": "SnapEDA_Extracted\\C0603X103J5RECAUTO.schlib"
+    },
+    {
+      "component": "C0805C106K4PACTU",
+      "footprints": [
+        "CAPC2012X88N"
+      ],
+      "source": "SnapEDA_Extracted\\C0805C106K4PACTU.schlib"
+    },
+    {
+      "component": "CC0603GRNPO9BN220",
+      "footprints": [
+        "CAPC1608X90"
+      ],
+      "source": "SnapEDA_Extracted\\CC0603GRNPO9BN220.schlib"
+    },
+    {
+      "component": "MP2307DN-LF-Z",
+      "footprints": [
+        "SOIC127P600X170-9N"
+      ],
+      "source": "SnapEDA_Extracted\\MP2307DN-LF-Z.schlib"
+    },
+    {
+      "component": "RT0603BRD0782KL",
+      "footprints": [
+        "RESC1608X55N_82K"
+      ],
+      "source": "SnapEDA_Extracted\\RT0603BRD0782KL.schlib"
+    },
+    {
+      "component": "RT0603FRD0710KL",
+      "footprints": [
+        "RESC1608X55N_10K"
+      ],
+      "source": "SnapEDA_Extracted\\RT0603FRD0710KL.schlib"
+    },
+    {
+      "component": "SM04B-SRSS-TB",
+      "footprints": [
+        "CONN_SM04B-SRSS-TB_JST"
+      ],
+      "source": "SnapEDA_Extracted\\SM04B-SRSS-TB.schlib"
+    },
+    {
+      "component": "SS34",
+      "footprints": [
+        "DIOM7959X265N"
+      ],
+      "source": "SnapEDA_Extracted\\SS34.schlib"
+    },
+    {
+      "component": "STM32F103C8T6",
+      "footprints": [
+        "QFP50P900X900X160-48N"
+      ],
+      "source": "SnapEDA_Extracted\\STM32F103C8T6.schlib"
+    },
+    {
+      "component": "TYPE-C-31-M-12",
+      "footprints": [
+        "HRO_TYPE-C-31-M-12"
+      ],
+      "source": "SnapEDA_Extracted\\TYPE-C-31-M-12.schlib"
+    },
+    {
+      "component": "1571294-1",
+      "footprints": [
+        "SW_1571294-1"
+      ],
+      "source": "SmartClimateControlLibrarySNEDA\\1571294-1\\Imported 1571294-1.lia\\1571294-1.SchLib"
+    }
+  ],
+  "footprint_names": [
+    "RESC1608X50N",
+    "RESC1608X55N_4K7",
+    "RESC1608X55N_5K1",
+    "LED_APT1608SGC",
+    "PSON65P250X250X100-8N",
+    "CAPC1608X95N",
+    "CAPC2012X88N",
+    "CAPC1608X90",
+    "SOIC127P600X170-9N",
+    "RESC1608X55N_82K",
+    "RESC1608X55N_10K",
+    "CONN_SM04B-SRSS-TB_JST",
+    "DIOM7959X265N",
+    "QFP50P900X900X160-48N",
+    "HRO_TYPE-C-31-M-12",
+    "SW_1571294-1",
+    "RESC1608X55N",
+    "RESC1608X50N_variant17",
+    "RESC1608X50N_variant18"
+  ],
+  "backup": "C:\\Users\\Public\\Documents\\Altium\\PCB_Smart_Climate_Monitor\\Library_Backup_2026-11-03",
+  "verification": "Altium opened both libraries and saved SchLib; all 16 symbol records, pins, font properties and parameters verified against sources, allowing only Altium metadata normalization and updated local footprint links. All 19 footprint geometry streams and 13 embedded model blobs verified unchanged."
+}

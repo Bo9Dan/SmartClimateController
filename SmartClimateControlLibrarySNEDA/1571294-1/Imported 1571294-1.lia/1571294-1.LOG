@@ -1,0 +1,28 @@
+PCAD Importer Log
+Project : 1571294-1.LibPkg
+
+Section : C:\Users\Public\Documents\Altium\PCB_Smart_Climate_Monitor\SmartClimateControlLibrarySNEDA\1571294-1\1571294-1.lia
+    Section : PCB Library - 1571294-1.PcbLib
+        Section : Load Messages
+            Warning - 1 : Skipping Token 1571294-1 On Line 125
+            Warning - 1 : Skipping Token attachedSymbol On Line 201
+        EndSection
+
+        Section : Import Messages
+        EndSection
+    EndSection
+
+    Section : SCH Library - 1571294-1.SchLib
+        Section : Parsing Messages
+            Warning - 1 : Skipping Token padStyleDef On Line 9
+            Warning - 1 : Skipping Token multiLayer On Line 84
+            Warning - 1 : Skipping Token layerContents On Line 90
+            Warning - 1 : Skipping Token layerContents On Line 96
+            Warning - 1 : Skipping Token layerContents On Line 105
+            Warning - 1 : Skipping Token layerContents On Line 114
+        EndSection
+
+        Section : Generating SCH Library - 1571294-1.SchLib
+        EndSection
+    EndSection
+EndSection
